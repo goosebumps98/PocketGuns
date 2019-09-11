@@ -9,4 +9,4 @@ Some parts of the Code from CobaltGuns
 
 © LentoKun Productions.
 
-Subscribe: https://youtube.com/c/LentoKun
+Subscribe: [Click Here! LentoKun](https://youtube.com/c/LentoKun)
