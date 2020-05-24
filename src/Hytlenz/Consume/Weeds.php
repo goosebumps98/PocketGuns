@@ -10,13 +10,16 @@ use pocketmine\event\Listener;
 use pocketmine\item\Potion;
 use pocketmine\event\player\PlayerItemConsumeEvent;
 use pocketmine\event\player\PlayerItemHeldEvent;
+
+use pocketmine\event\player\PlayerInteractEvent;
+
 use pocketmine\item\Item;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat as TF;
 
 class Weeds implements Listener {
 	
-	public function onConsume(PlayerItemConsumeEvent $event) {
+	public function onInteract(PlayerInteractEvent $event){
 		
 		$player = $event->getPlayer();
 		
