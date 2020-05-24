@@ -20,7 +20,7 @@ class Vape implements Listener {
 		
 		$player = $event->getPlayer();
 		
-		if($event->getItem()->getId() === 394) { //Potatoe Poisonous
+		if($event->getItem()->getId() === 165) { //Potatoe Poisonous
 		
 			$damage = $event->getItem()->getDamage();
 			
@@ -44,7 +44,7 @@ class Vape implements Listener {
 		
 		$player = $event->getPlayer();
 		
-		if($event->getItem()->getId() === 394) {
+		if($event->getItem()->getId() === 165) {
 			
 			$damage = $event->getItem()->getDamage();
 			$hand = $player->getInventory()->getItemInHand();
