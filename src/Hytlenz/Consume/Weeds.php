@@ -59,12 +59,9 @@ class Weeds implements Listener {
 				
 				$player->getInventory()->removeItem($item);
 				
-				$item->setCustomName(TF::RESET . TF::GREEN . TF::BOLD . "Weeds" . PHP_EOL . PHP_EOL .
-									 TF::RESET . TF::DARK_GRAY . " * " . TF::GREEN . "Speed I" . TF::GRAY . " (6:00)" . PHP_EOL .
-									 TF::DARK_GRAY . " * " . TF::GREEN . "Strength II" . TF::GRAY . " (6:00)" . PHP_EOL .
-									 TF::DARK_GRAY . " * " . TF::GREEN . "Night Vision" . TF::GRAY . " (3:00)" . PHP_EOL .
-									 TF::DARK_GRAY . " * " . TF::GREEN . "Health Boost" . TF::GRAY . " (1:00)" . PHP_EOL .
-									 TF::DARK_GRAY . " * " . TF::GREEN . "Jump" . TF::GRAY . "(1:00)");
+				$item->setCustomName(TF::RESET . TF::GREEN . TF::BOLD . "Panic Star" . PHP_EOL . PHP_EOL .
+									 TF::RESET . TF::DARK_GRAY . " * " . TF::GREEN . "LEVITATION I" . TF::GRAY . " (6:00)" . PHP_EOL .
+									 TF::DARK_GRAY . " * " . TF::GREEN . "INVISIBILITY II" . TF::GRAY . " (6:00)");
 				
 				$player->getInventory()->addItem($item);
 				return true;
