@@ -20,7 +20,7 @@ class Weeds implements Listener {
 		
 		$player = $event->getPlayer();
 		
-		if($event->getItem()->getId() === 367) { //Rotten Flesh
+		if($event->getItem()->getId() === 399) { //Rotten Flesh
 		
 			$damage = $event->getItem()->getDamage();
 			
@@ -28,13 +28,11 @@ class Weeds implements Listener {
 				
 				case 0:
 				
-				$player->addEffect(new EffectInstance(Effect::getEffect(Effect::SPEED), 360*20, 1, false));
-				$player->addEffect(new EffectInstance(Effect::getEffect(Effect::STRENGTH), 360*20, 2, false));
-				$player->addEffect(new EffectInstance(Effect::getEffect(Effect::NIGHT_VISION), 180*20, 1, false));
-				$player->addEffect(new EffectInstance(Effect::getEffect(Effect::HEALTH_BOOST), 60*20, 1, false));
-				$player->addEffect(new EffectInstance(Effect::getEffect(Effect::JUMP), 60*20, 1, false));
+				$player->addEffect(new EffectInstance(Effect::getEffect(Effect::LEVITATION), 360*20, 1, false));
+				$player->addEffect(new EffectInstance(Effect::getEffect(Effect::INVISIBILITY), 360*20, 2, false));
+			
 				
-				$player->addTitle(TF::DARK_GRAY . TF::BOLD . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "Smoked:", TF::GREEN . TF::BOLD . "Weed");
+				$player->addTitle(TF::DARK_GRAY . TF::BOLD . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "§bPanic Star:", TF::GREEN . TF::BOLD . "");
 				return true;
 				break;
 				
@@ -48,7 +46,7 @@ class Weeds implements Listener {
 		
 		$player = $event->getPlayer();
 		
-		if($event->getItem()->getId() === 367) {
+		if($event->getItem()->getId() === 399) {
 			
 			$damage = $event->getItem()->getDamage();
 			$hand = $player->getInventory()->getItemInHand();
@@ -57,7 +55,7 @@ class Weeds implements Listener {
 				
 				case 0:
 				
-				$item = Item::get(Item::ROTTEN_FLESH, 0, 1);
+				$item = Item::get(Item::NETHERSTAR, 0, 1);
 				
 				$player->getInventory()->removeItem($item);
 				
