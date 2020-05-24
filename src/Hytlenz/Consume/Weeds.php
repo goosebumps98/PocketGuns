@@ -31,8 +31,8 @@ class Weeds implements Listener {
 				
 				case 0:
 				
-				$player->addEffect(new EffectInstance(Effect::getEffect(Effect::LEVITATION), 360*20, 1, false));
-				$player->addEffect(new EffectInstance(Effect::getEffect(Effect::INVISIBILITY), 360*20, 2, false));
+				$player->addEffect(new EffectInstance(Effect::getEffect(Effect::LEVITATION), 30*20, 1, false));
+				$player->addEffect(new EffectInstance(Effect::getEffect(Effect::INVISIBILITY), 60*20, 2, false));
 			
 				
 				$player->addTitle(TF::DARK_GRAY . TF::BOLD . "(" . TF::GREEN . "!" . TF::DARK_GRAY . ") " . TF::RESET . TF::GRAY . "§bPanic Star:", TF::GREEN . TF::BOLD . "");
@@ -66,7 +66,7 @@ class Weeds implements Listener {
 									 TF::RESET . TF::DARK_GRAY . " * " . TF::GREEN . "LEVITATION I" . TF::GRAY . " (6:00)" . PHP_EOL .
 									 TF::DARK_GRAY . " * " . TF::GREEN . "INVISIBILITY II" . TF::GRAY . " (6:00)");
 				
-				$player->getInventory()->addItem($item);
+
 				return true;
 				break;
 				
