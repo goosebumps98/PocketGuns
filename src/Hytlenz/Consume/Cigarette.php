@@ -20,7 +20,7 @@ class Cigarette implements Listener {
 		
 		$player = $event->getPlayer();
 		
-		if($event->getItem()->getId() === 396) { //Golden Carrot
+		if($event->getItem()->getId() === 32) { //Golden Carrot
 		
 			$damage = $event->getItem()->getDamage();
 			
@@ -44,7 +44,7 @@ class Cigarette implements Listener {
 		
 		$player = $event->getPlayer();
 		
-		if($event->getItem()->getId() === 396) {
+		if($event->getItem()->getId() === 32) {
 			
 			$damage = $event->getItem()->getDamage();
 			$hand = $player->getInventory()->getItemInHand();
