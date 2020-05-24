@@ -20,7 +20,7 @@ class Cocaine implements Listener {
 		
 		$player = $event->getPlayer();
 		
-		if($event->getItem()->getId() === 375) { //Spider Eye
+		if($event->getItem()->getId() === 31) { //Spider Eye
 		
 			$damage = $event->getItem()->getDamage();
 			
@@ -46,7 +46,7 @@ class Cocaine implements Listener {
 		
 		$player = $event->getPlayer();
 		
-		if($event->getItem()->getId() === 375) {
+		if($event->getItem()->getId() === 31) {
 			
 			$damage = $event->getItem()->getDamage();
 			$hand = $player->getInventory()->getItemInHand();
